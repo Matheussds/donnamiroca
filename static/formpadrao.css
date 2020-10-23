@@ -1,0 +1,30 @@
+.caixa-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 16px;
+}
+
+.botoes {
+    margin-top: 50px;
+}
+
+.botoes > button {
+    margin: 0px 10px 0px 10px;
+    background: #088A4B;
+    text-align: center;
+    border-radius: 10px;
+    color: #F6CEEC;
+    font-family: 'Fredoka One', cursive;
+    font-size: 14px;
+    flex-grow: 1;
+    padding: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    border: none;
+    outline: inherit;
+}
+
+.botoes > button:hover {
+    background-color: bisque;
+    color: #B18904;
+    border: none;
+}

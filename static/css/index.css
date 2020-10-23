@@ -1,0 +1,233 @@
+body {
+    margin: 0;
+    background-image: url("img/fundo-flores.jpg");
+    background-size: contain;
+}
+
+html, body {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ------------------------------------------------- cabecalho ----------------------------------------------- */
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F1FFFD;
+    border-bottom: solid burlywood;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
+.nome-sistema {
+    font-family: 'Dancing Script', cursive;
+    font-size: 15pt;
+    text-align: center;
+    color: #B18904;
+    background-color: bisque;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.nome-sistema>h2, h3 {
+    margin: auto;
+}
+
+.links-de-cadastro {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4px;
+}
+
+.links-de-cadastro>a {
+    font-family: 'Dancing Script', cursive;
+    font-size: 13pt;
+    color: #F6CEEC;
+    text-align: center;
+    width: 120px;
+    margin: 2px;
+    background: #088A4B;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding: 2px;
+}
+
+.links-de-cadastro>a:hover {
+    background-color: bisque;
+    color: #B18904;
+}
+
+/* ------------------------------------ Painel -----------------------------------------------*/
+
+.container-cabecalho-principal {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.titulo-mes-painel {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #B18904;
+    text-align: center;
+}
+
+.principal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.geral {
+    height: 100%;
+}
+
+.container-principal {
+    flex-grow: 2;
+}
+
+.painel-entrega {
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #F1FFFD;
+    padding: 8px;
+}
+
+.painel, .menu-produto, .titulo-mes-painel {
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #F1FFFD;
+    padding: 8px;
+}
+
+.painel, .menu-produto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.painel>a:hover {
+    border: solid 2px #B18904;
+    padding: 8px;
+}
+
+.menu-produto>div {
+    display: flex;
+    flex-grow: 1;
+}
+
+.menu-produto>div>a {
+    margin: 0px 10px 0px 10px;
+    background: #088A4B;
+    text-align: center;
+    border-radius: 10px;
+    color: #F6CEEC;
+    font-family: 'Fredoka One', cursive;
+    font-size: 25px;
+    flex-grow: 1;
+    padding: 25px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-produto>div>a:hover {
+    background-color: bisque;
+    color: #B18904;
+}
+
+/* -------------------------------------- Status -------------------------------------------*/
+
+.totais {
+    background-color: bisque;
+    padding: 10px;
+    border-radius: 10px;
+    color: cornflowerblue;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    text-align: center;
+    width: 150px;
+}
+
+.totais>h1, h2 {
+    margin: auto;
+}
+
+ul, li {
+    text-align: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#dia {
+    width: 200px;
+}
+
+#dia>p {
+    color: #088A4B;
+    font-size: 25px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+/* -------------------------------------------- roda pé --------------------------------------------------*/
+
+footer {
+    display: flex;
+    border-top: solid burlywood;
+    background-color: #F1FFFD;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-top: auto;
+    width: 100%;
+}
+
+footer>p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    color: #B18904;
+}
+
+.tela-cheia {
+    color: bisque;
+    background-color: #B18904;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.tela-cheia:hover {
+    color: #F6CEEC;
+    background-color: #088A4B;
+    cursor: pointer;
+}
+
+.tela-cheia, .tela-normal {
+    border-radius: 100%;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tela-normal {
+    color: #F6CEEC;
+    background-color: #088A4B;
+    position: fixed;
+    bottom: 10px;
+    right: 70px;
+}
+
+.tela-normal:hover {
+    color: bisque;
+    background-color: #B18904;
+    cursor: pointer;
+}
+
+ul {
+    text-align: center;
+}

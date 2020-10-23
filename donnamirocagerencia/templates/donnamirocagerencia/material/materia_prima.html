@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'elementoscomuns.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'formpadrao.css' %}">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static '/img/favicon.ico' %}">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fredoka+One&family=Lobster&display=swap"
+        rel="stylesheet">
+    <title>Matéria Prima</title>
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <div>
+                <img src="{% static '/img/logo.jpg' %}" class="logo">
+            </div>
+            <h1>Matéria Prima</h1>
+        </div>
+    </header>
+    <main>
+        <div class="menu-cadastro">
+            <div><a id="abrir-modal">New Material</a></div>
+        </div>
+        <div id="modal-cadastro" class="modal">
+
+            <div class="modal-conteudo">
+                <div class="cabecalho-modal">
+                    <h2>Cadastro de Material</h2>
+                    <span class="fechar">&times;</span>
+                </div>
+
+                <div class="caixa-form">
+                    <form class="formulario-cadastro" method="POST">
+                        {% csrf_token %}
+
+                        <div class="caixa-grid">
+
+                            {% for field in materia_prima %}
+                            <div class="item">
+                                {{ field.label }}
+                                {{ field }}
+                            </div>
+                            {% endfor %}
+                           
+                            <div class="item">
+                                <label for="valor_pacote_m">Valor do Pacote R$ </label>
+                                <input class="v_pacote" type="text" id="valor_pacote_m" name="valor_pacote_m" onkeyup="valorUnidade()">
+                            </div>                           
+                        </div>
+                        <div class="botoes">
+                            <button type="submit">Salvar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="principal">
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>Disponível</th>
+                    <th>Preço Unidade</th>
+                    <th>Unidade de Medida</th>
+                </tr>
+                <tr class="linha">
+                    <td>Papel Fotográfico</td>
+                    <td>15</td>
+                    <td>2.00</td>
+                    <td>un</td>
+                </tr>
+                <tr class="linha">
+                    <td>Cola bastão</td>
+                    <td>50</td>
+                    <td>2.0</td>
+                    <td>cm</td>
+                </tr>
+                <tr class="linha">
+                    <td>Papel casca de ovo</td>
+                    <td>30</td>
+                    <td>1.50</td>
+                    <td>un</td>
+                </tr>
+                <tr class="linha">
+                    <td>Papel Fotográfico</td>
+                    <td>15</td>
+                    <td>2.00</td>
+                    <td>un</td>
+                </tr>
+                <tr class="linha">
+                    <td>Cola bastão</td>
+                    <td>50</td>
+                    <td>2.00</td>
+                    <td>cm</td>
+                </tr>
+                <tr class="linha">
+                    <td>Papel casca de ovo</td>
+                    <td>30</td>
+                    <td>1.50</td>
+                    <td>un</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <div class="tela-cheia" onclick="tela_cheia()">TC</div>
+    <div class="tela-normal" onclick="tela_normal()">TN</div>
+    <script src="{% static '/js_geral/calculo_valor_material.js' %}"></script>
+    <script src="{% static '/js_geral/telacheia.js' %}"></script>
+    <script src="{% static '/js_geral/modal.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.12/jquery.mask.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.12/jquery.mask.min.js"></script>
+    <script>
+       $('.v_pacote').mask('###0,00', {reverse: true}); 
+       $('.v_unidade').mask('###0,00', {reverse: true});
+    </script>
+</body>
+
+</html>

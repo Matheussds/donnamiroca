@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/elementoscomuns.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fredoka+One&family=Lobster&display=swap"
+        rel="stylesheet">
+    <title>Funcionário</title>
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <div>
+                <img src="/img/logo.jpg" class="logo">
+            </div>
+            <h2>Funcionário</h2>
+        </div>
+    </header>
+    <main>
+        <div class="menu-cadastro">
+            <div><a id="abrir-modal">Novo Funcionário</a></div>
+        </div>
+        <div id="modal-cadastro" class="modal">
+
+            <div class="modal-conteudo">
+              <span class="fechar">&times;</span>
+              <iframe src="cadastrofuncionario.html"></iframe>
+            </div>
+          
+          </div>
+        <div class="principal">
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>Email</th>
+                    <th>Conta</th>
+                </tr>
+                <tr class="linha">
+                    <td>Papel Fotográfico</td>
+                    <td>15</td>
+                    <td>2.00</td>
+                    <td>un</td>
+                </tr>
+                <tr class="linha">
+                    <td>Cola bastão</td>
+                    <td>50</td>
+                    <td>2.0</td>
+                    <td>cm</td>
+                </tr>
+                <tr class="linha">
+                    <td>Papel casca de ovo</td>
+                    <td>30</td>
+                    <td>1.50</td>
+                    <td>un</td>
+                </tr>
+                <tr class="linha">
+                    <td>Papel Fotográfico</td>
+                    <td>15</td>
+                    <td>2.00</td>
+                    <td>un</td>
+                </tr>
+                <tr class="linha">
+                    <td>Cola bastão</td>
+                    <td>50</td>
+                    <td>2.0</td>
+                    <td>cm</td>
+                </tr>
+                <tr class="linha">
+                    <td>Papel casca de ovo</td>
+                    <td>30</td>
+                    <td>1.50</td>
+                    <td>un</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <div class="tela-cheia" onclick="tela_cheia()">TC</div>
+    <div class="tela-normal" onclick="tela_normal()">TN</div>
+    <script src="/js_geral/telacheia.js"></script>
+    <script src="/js_geral/modal.js"></script>
+</body>
+
+</html>

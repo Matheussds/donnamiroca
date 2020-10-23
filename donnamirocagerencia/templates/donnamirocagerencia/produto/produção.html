@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/producao.css' %}">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/favicon.ico' %}">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fredoka+One&family=Lobster&display=swap"
+        rel="stylesheet">
+    <title>Produção</title>
+</head>
+
+<body>
+    <div class="container-geral">
+        <div class="container-selecao-materiais">
+            <div class="caixa-de-materiais decoracao_1">
+                <div class="titulo">
+                    <h2>Caixa de Materiais</h2>
+                </div>
+                <div class="caixa-itens" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                </div>
+                <div class="botoes">
+                    <button>Salvar</button>
+                    <form>
+                        <label>Margem de lucro: </label>
+                        <input type="number">
+                    </form>
+                </div>
+            </div>
+            <div class="caixa-de-selecao decoracao_1" ondrop="drop2(event)" ondragover="allowDrop(event)">
+                <div class="titulo">
+                    <h2>Caixa de Seleção</h2>
+                </div>
+                <div class="item-selecao">
+                    <p>Papel Fotográfico</p>
+                </div>
+                <div class="item-selecao">
+                    <p>Papel Casca de Ovo</p>
+                </div>
+                <div class="item-selecao">
+                    <p>Caixa MDF</p>
+                </div>
+                <div class="item-selecao">
+                    <p>Cola Bastão</p>
+                </div>
+                <div class="item-selecao">
+                    <p>Cartolina</p>
+                </div>
+                <div class="item-selecao">
+                    <p>Grampo</p>
+                </div>
+                <div class="item-selecao">
+                    <p>Papel de Seda</p>
+                </div>
+                <div class="item-selecao">
+                    <p>Fita Crepe</p>
+                </div>
+                <div class="item-selecao">
+                    <p>Fita Crepe</p>
+                </div>
+                <div class="item-selecao">
+                    <p> Grampo</p>
+                </div>
+                <div class="item-selecao">
+                    <p> Papel de Seda</p>
+                </div>
+            </div>
+        </div>
+        <div class="caixa-de-valores decoracao_1">
+            <div class="titulo">
+                <h2>Valores</h2>
+            </div>
+            <div class="caixa-itens-valores">
+                <div class="item-valor">
+                    <p>Nº Itens</p>
+                    <p id="quantidade-items">50</p>
+                </div>
+                <div class="item-valor">
+                    <p>Custos</p>
+                    <p id="custos">R$ 30,00</p>
+                </div>
+                <div class="item-valor">
+                    <p>Venda</p>
+                    <p id="valor-pruduto">R$ 100,00</p>
+                </div>
+                <div class="item-valor">
+                    <p>Lucro</p>
+                    <p id="lucro-estimado">R$ 70,00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'js_geral/arraste.js' %}"></script>
+</body>
+
+</html>

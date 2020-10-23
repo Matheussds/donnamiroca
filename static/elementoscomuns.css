@@ -1,0 +1,204 @@
+a {
+    text-decoration: none;
+}
+
+.tela-cheia {
+    color: bisque;
+    background-color: #B18904;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.tela-cheia:hover {
+    color: #F6CEEC;
+    background-color: #088A4B;
+    cursor: pointer;
+}
+
+.tela-cheia, .tela-normal {
+    border-radius: 100%;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tela-normal {
+    color: #F6CEEC;
+    background-color: #088A4B;
+    position: fixed;
+    bottom: 10px;
+    right: 70px;
+}
+
+.tela-normal:hover {
+    color: bisque;
+    background-color: #B18904;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+
+.modal-conteudo {
+    display: flex;
+    flex-direction: column;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+}
+
+.cabecalho-modal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho-modal > h2 {
+    font-family: 'Dancing Script', cursive;
+    color: #B18904;
+}
+
+/* The Close Button */
+
+.fechar {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.fechar:hover, .fechar:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+body {
+    margin: 0;
+    background-image: url("img/fundo-flores.jpg");
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F1FFFD;
+    width: 100%;
+    height: 80px;
+    border-bottom: solid burlywood;
+    margin-bottom: 10px;
+}
+
+.cabecalho>h2 {
+    font-family: 'Dancing Script', cursive;
+    color: #B18904;
+}
+
+.logo {
+    position: relative;
+    height: 80px;
+    width: 80px;
+    margin: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: solid 2px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+th {
+    height: 30px;
+}
+
+table, th, td {
+    border: 1px solid #B18904;
+    ;
+    padding: 5px;
+    text-align: left;
+    color: #088A4B;
+    font-family: Verdana, sans-serif;
+}
+
+.principal {
+    background: #F1FFFD;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.linha {
+    text-decoration: none;
+}
+
+.linha:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+.linha:hover>td {
+    color: white
+}
+
+.menu-cadastro>div {
+    display: flex;
+    flex-grow: 1;
+}
+
+.menu-cadastro>div>a {
+    margin: 0px 10px 0px 10px;
+    background: #088A4B;
+    text-align: center;
+    border-radius: 10px;
+    color: #F6CEEC;
+    font-family: 'Fredoka One', cursive;
+    font-size: 25px;
+    flex-grow: 1;
+    padding: 8px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.menu-cadastro>div>a:hover {
+    background-color: bisque;
+    color: #B18904;
+}

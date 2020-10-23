@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/favicon.ico' %}">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fredoka+One&family=Lobster&display=swap"
+        rel="stylesheet">
+    <title>Donna Miroca</title>
+</head>
+
+<body>
+    <div class="geral">
+        <div class="cabecalho">
+            <img src="{% static 'img/logo.jpg' %}" class="logo">
+
+            <div class="nome-sistema">
+                <h2>Donna Miroca</h2>
+                <h3>Gestão</h3>
+            </div>
+
+            <div class="links-de-cadastro">
+                <a href="funcionario/funcionario.html" target="_blank">Funcionário</a>
+                <a href="fornecedor/" target="_blank">Fornecedor</a>
+                <a href="funcionario/usuarios/usuario.html" target="_blank">Usuário</a>
+                <a href="materia_prima/" target="_blank">Matéria Prima</a>
+                <a href="cliente/cliente.html" target="_blank">Cliente</a>
+            </div>
+        </div>
+        <div class="menu-produto">
+            <div><a href="">Encomenda</a></div>
+            <div><a href="producao/" target="_blank">Produção</a></div>
+        </div>
+        <h2 class="titulo-mes-painel">Dados do mês</h2>
+        <div class="principal">
+            <div class="container-principal">
+                <div class="painel">
+                    <a href="" class="totais">
+                        <h2>Encomendas</h2>
+                        <h1>60</h1>
+                    </a>
+
+                    <a href="" class="totais">
+                        <h2>Prontos</h2>
+                        <h1>5</h1>
+                    </a>
+
+                    <a href="" class="totais">
+                        <h2>Entregues</h2>
+                        <h1>55</h1>
+                    </a>
+                </div>
+                <div class="painel">
+                    <a href="" class="totais">
+                        <h2>Arrecadado</h2>
+                        <h1>R$ 50,00</h1>
+                    </a>
+
+                    <a href="" class="totais">
+                        <h2>A receber</h2>
+                        <h1>R$ 200,00</h1>
+                    </a>
+
+                    <a href="" class="totais">
+                        <h2>Custos</h2>
+                        <h1>R$ 140,00</h1>
+                    </a>
+
+                    <a href="" class="totais">
+                        <h2>Lucro</h2>
+                        <h1>R$ 110,00</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="painel">
+                <div class="totais" id="dia">
+                    <p>Entregas do dia</p>
+                    <ul>
+                        <li>Fulano de tal</li>
+                        <li>Siclano Outono</li>
+                        <li>Beltrano do Pano Sigano
+                        <li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="tela-cheia" onclick="tela_cheia()">TC</div>
+        <div class="tela-normal" onclick="tela_normal()">TN</div>
+    </div>
+
+    <footer>
+        <p>&copy MTECH | Contanto: (61)995127463 | Email: matheus.developer.dba@outlook.com</p>
+    </footer>
+    <script src="{% static 'js_geral/telacheia.js' %}"></script>
+</body>
+
+</html>
